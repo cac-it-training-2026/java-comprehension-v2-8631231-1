@@ -13,19 +13,6 @@ abstract class AbstMember {
 	protected String name;
 
 	/**
-	 * 商品を購入する（メッセージ出力）
-	 * 抽象メソッド
-	 */
-	public abstract void buyItem();
-
-	/**
-	 * メンバー情報を表示する（メッセージ出力）
-	 * 抽象メソッド
-	 * 
-	 */
-	public abstract void showMember();
-
-	/**
 	 * @return name
 	 */
 	public String getName() {
@@ -38,5 +25,18 @@ abstract class AbstMember {
 	public void setName(String name) {
 		this.name = name;
 	}
+
+	/**
+	 * 商品を購入する（メッセージ出力）
+	 * 抽象メソッド
+	 */
+	public abstract void buyItem();
+
+	/**
+	 * メンバー情報を表示する（メッセージ出力）
+	 * 抽象メソッド
+	 * 
+	 */
+	public abstract void showMember();
 
 }
