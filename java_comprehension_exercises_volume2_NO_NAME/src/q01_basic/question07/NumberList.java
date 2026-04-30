@@ -15,6 +15,7 @@ class NumberList {
 	 */
 	private List<Integer> numbers = new ArrayList<>();
 
+	//List型？
 	/**
 	 * 1から引数までの整数をListに代入する
 	 * 
@@ -22,6 +23,10 @@ class NumberList {
 	 */
 	public void addFromOneTo(Integer limit) {
 		//TODO ここから実装する
+		for (int i = 1; i <= limit; i++) {
+			numbers.add(i);
+			//可変長クラスに入れるためのもともとある変数
+		}
 
 	}
 
@@ -33,6 +38,10 @@ class NumberList {
 	public Integer calcSumOfList() {
 		Integer sum = 0;
 		//TODO ここから実装する
+		for (int number : numbers) {
+			sum += number;
+			//numberの数字を加算して代入
+		}
 
 		return sum;
 	}
@@ -43,6 +52,11 @@ class NumberList {
 	 */
 	public void doubleListEachValue() {
 		//TODO ここから実装する
+		for (int i = 0; i < numbers.size(); i++) {
+			numbers.set(i, numbers.get(i) * 2);
+			//sizeはlengthと同じ
+			//最初のiはかける数字
+		}
 	}
 
 	/**
@@ -51,7 +65,12 @@ class NumberList {
 	 */
 	public void removeIndexOfFirstHalf() {
 		//TODO ここから実装する
-
+		int half = numbers.size() / 2;
+		for (int i = 0; i < half; i++) {
+			numbers.remove(0);
+			//halfは前半部分を出す
+			//removeで0を消すと詰めてくれるので前半だけ消せる
+		}
 	}
 
 	/**

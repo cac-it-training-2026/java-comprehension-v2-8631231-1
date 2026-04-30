@@ -13,6 +13,34 @@ public class SystemMain06 {
 
 		System.out.println("---CREATE MEMBER DATA---");
 		//TODO ここから実装する
+		try {
+			// 9.1.1 会員ID入力
+			System.out.print("input id>>");
+			int inputid = cr.inputNumber();
+			inputId = inputid;
+
+		} catch (Exception e) {
+			System.out.println("error!");
+			e.printStackTrace();
+		}
+
+		try {
+
+			System.out.println("input password>>");
+			String inputpassword = cr.inputString();
+			inputPassword = inputpassword;
+		} catch (Exception e) {
+			System.out.println("error!");
+			e.printStackTrace();
+		}
+
+		//		 Member member = new Member();
+		//		 member.Member();
+
+		Member member = new Member(inputId, inputPassword, name, age, rank);
+
+		// 9.3 ユーザー情報出力
+		member.showMember();
 
 	}
 
