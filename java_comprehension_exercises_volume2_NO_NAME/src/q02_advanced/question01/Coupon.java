@@ -62,5 +62,5 @@ public class Coupon {
 	public String toString() {
 		return "Coupon [id=" + id + ", discountRate=" + discountRate + ", description=" + description + "]";
 	}
-
+	//プッシュ用メッセージ
 }
