@@ -84,7 +84,7 @@ public class Member extends AbstMember {
 
 	@Override
 	public void showMember() {
-
+		System.out.println("---SHOW MEMBER--- ");
 		System.out.println("***MEMBER DATA*** ");
 		System.out.println("id:" + id);
 		System.out.println("password:" + password);

@@ -26,7 +26,7 @@ public class SystemMain06 {
 
 		try {
 
-			System.out.println("input password>>");
+			System.out.print("input password>>");
 			String inputpassword = cr.inputString();
 			inputPassword = inputpassword;
 		} catch (Exception e) {

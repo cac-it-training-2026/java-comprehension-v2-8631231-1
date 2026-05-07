@@ -42,6 +42,7 @@ public class SystemMain07 {
 		System.out.println("****************");
 		System.out.println("Listの前半分のインデックスの要素を削除します");
 		//TODO ここから実装する
+
 		numberList.removeIndexOfFirstHalf();
 		System.out.println(numberList.getNumbers());
 

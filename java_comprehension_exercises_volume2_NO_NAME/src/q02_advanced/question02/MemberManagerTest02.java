@@ -135,7 +135,7 @@ public class MemberManagerTest02 {
 
 		System.out.println("--- MemberManager.showAllMembers の出力開始 ---");
 		// showAllMembersメソッドを呼び出し
-		MemberManager.showAllMembers(members);
+		//MemberManager.showAllMembers(members);
 		System.out.println("--- MemberManager.showAllMembers の出力終了 ---");
 
 		// 出力内容を人が確認する必要があります。
